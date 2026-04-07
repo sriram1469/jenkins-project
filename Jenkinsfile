@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                sh 'docker build -t myapp:latest .'
+                sh 'sh 'docker build --no-cache -t demo:v1 .''
             }
         }
         stage('Run Container') {
